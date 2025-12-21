@@ -81,7 +81,7 @@ center, right = st.columns([3, 1.4])
 
 # ===================== CENTER PANEL ============================================================================
 with center:
-    st.title("💪 AI-Powered Body Fat & Composition Analysis")
+    st.title("💪 AI-Powered Body Fat Prediction and Composition Analysis")
     st.write("Clinical-grade prediction with explainable ML insights")
 
     with st.form("bf_form"):
@@ -230,3 +230,4 @@ with right:
     render_health_metrics_guide()
 
 ######################################################################################################
+
