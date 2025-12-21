@@ -230,4 +230,71 @@ with right:
     render_health_metrics_guide()
 
 ######################################################################################################
+st.markdown(
+    """
+    <style>
+    .dev-box {
+        text-align: center;
+        padding: 14px 16px;
+        border-radius: 16px;
+        background: linear-gradient(145deg, #020617, #020c1b);
+        border: 1px solid #1e293b;
+        width: 180px;
+        margin-left: auto;
+        font-family: "Segoe UI", sans-serif;
+        box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+    }
+    .dev-name {
+        font-size: 16px;
+        font-weight: 700;
+        color: #e5e7eb;
+        margin-bottom: 4px;
+    }
+    .dev-role {
+        font-size: 13px;
+        font-weight: 600;
+        color: #c7d2fe;
+        margin-bottom: 10px;
+        letter-spacing: 0.3px;
+    }
+    .icon-circle {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        background: #0f172a;
+        border: 1px solid #334155;
+        margin: 0 8px;
+        transition: transform 0.2s ease;
+    }
+    .icon-circle:hover {
+        transform: scale(1.1);
+    }
+    .icon-circle img {
+        width: 18px;
+        filter: brightness(0) invert(1); /* makes icon white */
+    }
+    </style>
+
+    <div class="dev-box">
+        <div class="dev-name">🧑‍💻 Sagar Kumar</div>
+        <div class="dev-role">Data Science • AI • ML Enthusiast</div>
+        <div>
+            <a href="https://www.linkedin.com/in/sagar-kumar-40849b27b/" target="_blank" class="icon-circle">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png">
+            </a>
+            <a href="https://github.com/sagar352002/explainable-bodyfat-ai/blob/main/app.py" target="_blank" class="icon-circle">
+                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png">
+            </a>
+        </div>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
+
+
+
 
