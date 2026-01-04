@@ -21,7 +21,7 @@ def generate_fitness_summary(llm_input: dict) -> list:
     prompt = body_fitness_prompt_template(llm_input)
 
     llm = ChatOpenAI(
-        model="openai/gpt-oss-20b:free",
+        model="meta-llama/llama-3.3-70b-instruct:free",
         api_key=os.getenv("OPENROUTER_API_KEY"),
         base_url="https://openrouter.ai/api/v1",
         temperature=0.6
