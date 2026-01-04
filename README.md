@@ -4,7 +4,9 @@
 
 An AI-driven fitness application that predicts **body fat percentage** using **simple tape-based body measurements**,
  eliminating the need for expensive, time-consuming, and inconvenient traditional body composition methods.
-##### **Live Demo:** [Click here to try the app](https://explainable-body-fat-prediction.streamlit.app/)
+## 🚀 **Live Demo**
+👉 **[Click here to try the app](https://explainable-body-fat-prediction.streamlit.app/)**
+
 > The dashboard includes clear documentation of all measurements and parameters, along with a demo video for user convenience.
 
 
