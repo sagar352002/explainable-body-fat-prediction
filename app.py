@@ -134,7 +134,15 @@ with center:
             feature_importance_df=feature_importance_df
         )
 
-        insights = generate_fitness_summary(llm_input)
+        try:
+            insights = generate_fitness_summary(llm_input)
+        except Exception as e:
+            insights = [
+                "Automated health insights are currently unavailable.",
+        "All clinical predictions and body composition metrics have been generated successfully.",
+        "Please revisit this section later for personalized interpretive guidance."
+            ]
+            st.warning("⚠️ AI insights could not be generated. Showing results without LLM analysis.")
 
         # store results to avoid recompute on rerun
         st.session_state["results"] = (bf, bmi, comp, insights)
@@ -293,6 +301,7 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+
 
 
 
