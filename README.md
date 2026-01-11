@@ -315,7 +315,6 @@ Sagar's 72 kg =
 
 1. **📊 Data Collection**
    - Dataset: 252 adult men
-   - Lab-verified body fat (underwater weighing)
    - 13+ anthropometric measurements
 
 2. **🧹 Preprocessing**
@@ -331,9 +330,7 @@ Sagar's 72 kg =
 
 4. **🤖 Model Training**
    - Tested: Linear, Ridge, Lasso, ElasticNet
-   - **Winner: Ridge Regression** (α = 0.5)
    - Cross-validation: 5-fold CV
-   - Hyperparameter tuning: GridSearchCV
 
 5. **📈 Evaluation**
    - **R² Score: 0.94** (explains 94% variance)
