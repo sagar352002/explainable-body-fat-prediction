@@ -21,7 +21,7 @@ def generate_fitness_summary(llm_input: dict) -> list:
     prompt = body_fitness_prompt_template(llm_input)
 
     llm = ChatOpenAI(
-        model="arcee-ai/spotlight",
+        model="liquid/lfm-2.5-1.2b-thinking:free",
         api_key=os.getenv("OPENROUTER_API_KEY"),
         base_url="https://openrouter.ai/api/v1",
         temperature=0.6
